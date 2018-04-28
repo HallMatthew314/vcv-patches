@@ -12,11 +12,11 @@
       "params": [],
       "data": {
         "audio": {
-          "driver": 1,
-          "deviceName": "default",
+          "driver": 6,
+          "deviceName": "Headphones (High Definition Audio Device)",
           "offset": 0,
           "maxChannels": 8,
-          "sampleRate": 44100,
+          "sampleRate": 48000,
           "blockSize": 256
         }
       }
@@ -149,7 +149,7 @@
       "version": "0.6.5",
       "model": "SEQ16",
       "pos": [
-        67,
+        73,
         1
       ],
       "params": [
@@ -670,6 +670,67 @@
       }
     },
     {
+      "plugin": "SynthKit",
+      "version": "0.6.0",
+      "model": "Addition",
+      "pos": [
+        13,
+        1
+      ],
+      "params": []
+    },
+    {
+      "plugin": "Core",
+      "version": "0.6.0",
+      "model": "Blank",
+      "pos": [
+        16,
+        1
+      ],
+      "params": [],
+      "width": 150.0
+    },
+    {
+      "plugin": "AS",
+      "version": "0.6.5",
+      "model": "BPMClock",
+      "pos": [
+        67,
+        1
+      ],
+      "params": [
+        {
+          "paramId": 0,
+          "value": 120.0
+        },
+        {
+          "paramId": 1,
+          "value": 1.0
+        },
+        {
+          "paramId": 2,
+          "value": 4.0
+        },
+        {
+          "paramId": 3,
+          "value": 1.0
+        },
+        {
+          "paramId": 5,
+          "value": 0.0
+        },
+        {
+          "paramId": 4,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "run": [
+          1
+        ]
+      }
+    },
+    {
       "plugin": "AS",
       "version": "0.6.5",
       "model": "Mixer8ch",
@@ -796,27 +857,6 @@
           0
         ]
       }
-    },
-    {
-      "plugin": "SynthKit",
-      "version": "0.6.0",
-      "model": "Addition",
-      "pos": [
-        13,
-        1
-      ],
-      "params": []
-    },
-    {
-      "plugin": "Core",
-      "version": "0.6.0",
-      "model": "Blank",
-      "pos": [
-        16,
-        1
-      ],
-      "params": [],
-      "width": 150.0
     }
   ],
   "wires": [
@@ -829,8 +869,8 @@
       },
       "outputModuleId": 2,
       "outputId": 0,
-      "inputModuleId": 11,
-      "inputId": 10
+      "inputModuleId": 14,
+      "inputId": 22
     },
     {
       "color": {
@@ -840,7 +880,7 @@
         "a": 1.0
       },
       "outputModuleId": 6,
-      "outputId": 7,
+      "outputId": 11,
       "inputModuleId": 2,
       "inputId": 0
     },
@@ -852,7 +892,7 @@
         "a": 1.0
       },
       "outputModuleId": 6,
-      "outputId": 8,
+      "outputId": 4,
       "inputModuleId": 2,
       "inputId": 1
     },
@@ -865,8 +905,8 @@
       },
       "outputModuleId": 2,
       "outputId": 1,
-      "inputModuleId": 11,
-      "inputId": 13
+      "inputModuleId": 14,
+      "inputId": 1
     },
     {
       "color": {
@@ -877,8 +917,8 @@
       },
       "outputModuleId": 3,
       "outputId": 0,
-      "inputModuleId": 11,
-      "inputId": 7
+      "inputModuleId": 14,
+      "inputId": 19
     },
     {
       "color": {
@@ -889,8 +929,8 @@
       },
       "outputModuleId": 3,
       "outputId": 1,
-      "inputModuleId": 11,
-      "inputId": 19
+      "inputModuleId": 14,
+      "inputId": 7
     },
     {
       "color": {
@@ -900,7 +940,7 @@
         "a": 1.0
       },
       "outputModuleId": 6,
-      "outputId": 6,
+      "outputId": 10,
       "inputModuleId": 3,
       "inputId": 0
     },
@@ -912,7 +952,7 @@
         "a": 1.0
       },
       "outputModuleId": 6,
-      "outputId": 10,
+      "outputId": 6,
       "inputModuleId": 3,
       "inputId": 1
     },
@@ -924,7 +964,7 @@
         "a": 1.0
       },
       "outputModuleId": 6,
-      "outputId": 5,
+      "outputId": 9,
       "inputModuleId": 7,
       "inputId": 0
     },
@@ -937,8 +977,8 @@
       },
       "outputModuleId": 5,
       "outputId": 0,
-      "inputModuleId": 11,
-      "inputId": 22
+      "inputModuleId": 14,
+      "inputId": 10
     },
     {
       "color": {
@@ -948,7 +988,7 @@
         "a": 1.0
       },
       "outputModuleId": 6,
-      "outputId": 11,
+      "outputId": 7,
       "inputModuleId": 5,
       "inputId": 0
     },
@@ -960,7 +1000,7 @@
         "a": 1.0
       },
       "outputModuleId": 6,
-      "outputId": 9,
+      "outputId": 5,
       "inputModuleId": 4,
       "inputId": 0
     },
@@ -973,8 +1013,8 @@
       },
       "outputModuleId": 4,
       "outputId": 0,
-      "inputModuleId": 11,
-      "inputId": 16
+      "inputModuleId": 14,
+      "inputId": 4
     },
     {
       "color": {
@@ -986,7 +1026,7 @@
       "outputModuleId": 8,
       "outputId": 0,
       "inputModuleId": 0,
-      "inputId": 4
+      "inputId": 0
     },
     {
       "color": {
@@ -998,7 +1038,7 @@
       "outputModuleId": 8,
       "outputId": 1,
       "inputModuleId": 0,
-      "inputId": 5
+      "inputId": 1
     },
     {
       "color": {
@@ -1045,8 +1085,8 @@
       },
       "outputModuleId": 7,
       "outputId": 0,
-      "inputModuleId": 11,
-      "inputId": 4
+      "inputModuleId": 14,
+      "inputId": 16
     },
     {
       "color": {
@@ -1055,7 +1095,7 @@
         "b": 0.278431386,
         "a": 1.0
       },
-      "outputModuleId": 12,
+      "outputModuleId": 11,
       "outputId": 0,
       "inputModuleId": 10,
       "inputId": 0
@@ -1067,7 +1107,7 @@
         "b": 0.678431392,
         "a": 1.0
       },
-      "outputModuleId": 12,
+      "outputModuleId": 11,
       "outputId": 0,
       "inputModuleId": 8,
       "inputId": 1
@@ -1079,9 +1119,9 @@
         "b": 0.054901965,
         "a": 1.0
       },
-      "outputModuleId": 11,
+      "outputModuleId": 14,
       "outputId": 0,
-      "inputModuleId": 12,
+      "inputModuleId": 11,
       "inputId": 0
     },
     {
@@ -1091,9 +1131,21 @@
         "b": 0.278431386,
         "a": 1.0
       },
-      "outputModuleId": 11,
+      "outputModuleId": 14,
       "outputId": 1,
-      "inputModuleId": 12,
+      "inputModuleId": 11,
+      "inputId": 1
+    },
+    {
+      "color": {
+        "r": 0.0470588282,
+        "g": 0.556862772,
+        "b": 0.0823529437,
+        "a": 1.0
+      },
+      "outputModuleId": 13,
+      "outputId": 1,
+      "inputModuleId": 6,
       "inputId": 1
     }
   ]
