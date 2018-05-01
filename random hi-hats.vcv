@@ -6,7 +6,7 @@
       "version": "0.6.0",
       "model": "AudioInterface",
       "pos": [
-        35,
+        39,
         0
       ],
       "params": [],
@@ -26,7 +26,7 @@
       "version": "0.6.0",
       "model": "Scope",
       "pos": [
-        45,
+        49,
         0
       ],
       "params": [
@@ -70,7 +70,7 @@
     },
     {
       "plugin": "AS",
-      "version": "0.6.5",
+      "version": "0.6.6",
       "model": "BPMClock",
       "pos": [
         14,
@@ -79,7 +79,7 @@
       "params": [
         {
           "paramId": 0,
-          "value": 129.76503
+          "value": 119.685066
         },
         {
           "paramId": 1,
@@ -87,11 +87,11 @@
         },
         {
           "paramId": 2,
-          "value": 4.0
+          "value": 4.24250364
         },
         {
           "paramId": 3,
-          "value": 1.0
+          "value": 1.12949824
         },
         {
           "paramId": 5,
@@ -110,7 +110,7 @@
     },
     {
       "plugin": "AS",
-      "version": "0.6.5",
+      "version": "0.6.6",
       "model": "BPMCalc",
       "pos": [
         0,
@@ -192,7 +192,7 @@
       "version": "0.6.0",
       "model": "Braids",
       "pos": [
-        16,
+        20,
         1
       ],
       "params": [
@@ -253,10 +253,10 @@
     },
     {
       "plugin": "AS",
-      "version": "0.6.5",
+      "version": "0.6.6",
       "model": "Mixer8ch",
       "pos": [
-        32,
+        41,
         1
       ],
       "params": [
@@ -294,7 +294,7 @@
         },
         {
           "paramId": 1,
-          "value": 0.800000012
+          "value": 0.321500063
         },
         {
           "paramId": 2,
@@ -381,7 +381,7 @@
     },
     {
       "plugin": "mental",
-      "version": "0.6.2",
+      "version": "0.6.3",
       "model": "MentalClockDivider",
       "pos": [
         20,
@@ -399,7 +399,7 @@
       "version": "0.6.0",
       "model": "Open HiHat",
       "pos": [
-        23,
+        27,
         0
       ],
       "params": [
@@ -418,7 +418,7 @@
       "version": "0.6.0",
       "model": "Closed HiHat",
       "pos": [
-        32,
+        36,
         0
       ],
       "params": [
@@ -437,7 +437,7 @@
       "version": "0.6.0",
       "model": "Branches",
       "pos": [
-        26,
+        30,
         0
       ],
       "params": [
@@ -464,11 +464,51 @@
       "version": "0.6.0",
       "model": "Notes",
       "pos": [
-        58,
+        62,
         0
       ],
       "params": [],
       "text": "First bernoulli gate decides if there will be a hi-hat while the sceond decides between open and closed"
+    },
+    {
+      "plugin": "AS",
+      "version": "0.6.6",
+      "model": "Merge2_5",
+      "pos": [
+        36,
+        1
+      ],
+      "params": []
+    },
+    {
+      "plugin": "ML_modules",
+      "version": "0.6.0",
+      "model": "TrigBuf",
+      "pos": [
+        16,
+        1
+      ],
+      "params": []
+    },
+    {
+      "plugin": "PvC",
+      "version": "0.6.0",
+      "model": "PlainVoidCanvas",
+      "pos": [
+        78,
+        1
+      ],
+      "params": []
+    },
+    {
+      "plugin": "Qwelk",
+      "version": "0.6.0",
+      "model": "NOT",
+      "pos": [
+        23,
+        0
+      ],
+      "params": []
     }
   ],
   "wires": [
@@ -541,8 +581,8 @@
       },
       "outputModuleId": 4,
       "outputId": 0,
-      "inputModuleId": 6,
-      "inputId": 1
+      "inputModuleId": 12,
+      "inputId": 5
     },
     {
       "color": {
@@ -553,44 +593,8 @@
       },
       "outputModuleId": 5,
       "outputId": 0,
-      "inputModuleId": 6,
-      "inputId": 4
-    },
-    {
-      "color": {
-        "r": 0.788235366,
-        "g": 0.0941176564,
-        "b": 0.278431386,
-        "a": 1.0
-      },
-      "outputModuleId": 7,
-      "outputId": 4,
-      "inputModuleId": 5,
-      "inputId": 0
-    },
-    {
-      "color": {
-        "r": 0.788235366,
-        "g": 0.0941176564,
-        "b": 0.278431386,
-        "a": 1.0
-      },
-      "outputModuleId": 2,
-      "outputId": 2,
-      "inputModuleId": 7,
-      "inputId": 0
-    },
-    {
-      "color": {
-        "r": 0.0470588282,
-        "g": 0.556862772,
-        "b": 0.0823529437,
-        "a": 1.0
-      },
-      "outputModuleId": 2,
-      "outputId": 3,
-      "inputModuleId": 7,
-      "inputId": 1
+      "inputModuleId": 12,
+      "inputId": 6
     },
     {
       "color": {
@@ -637,7 +641,7 @@
       },
       "outputModuleId": 8,
       "outputId": 1,
-      "inputModuleId": 6,
+      "inputModuleId": 12,
       "inputId": 7
     },
     {
@@ -649,8 +653,8 @@
       },
       "outputModuleId": 9,
       "outputId": 1,
-      "inputModuleId": 6,
-      "inputId": 10
+      "inputModuleId": 12,
+      "inputId": 8
     },
     {
       "color": {
@@ -666,14 +670,146 @@
     },
     {
       "color": {
+        "r": 0.788235366,
+        "g": 0.0941176564,
+        "b": 0.278431386,
+        "a": 1.0
+      },
+      "outputModuleId": 12,
+      "outputId": 1,
+      "inputModuleId": 6,
+      "inputId": 1
+    },
+    {
+      "color": {
+        "r": 0.0470588282,
+        "g": 0.556862772,
+        "b": 0.0823529437,
+        "a": 1.0
+      },
+      "outputModuleId": 2,
+      "outputId": 3,
+      "inputModuleId": 13,
+      "inputId": 0
+    },
+    {
+      "color": {
+        "r": 0.0352941193,
+        "g": 0.525490224,
+        "b": 0.678431392,
+        "a": 1.0
+      },
+      "outputModuleId": 13,
+      "outputId": 0,
+      "inputModuleId": 13,
+      "inputId": 1
+    },
+    {
+      "color": {
+        "r": 0.788235366,
+        "g": 0.717647076,
+        "b": 0.054901965,
+        "a": 1.0
+      },
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 13,
+      "inputId": 2
+    },
+    {
+      "color": {
+        "r": 0.788235366,
+        "g": 0.0941176564,
+        "b": 0.278431386,
+        "a": 1.0
+      },
+      "outputModuleId": 13,
+      "outputId": 1,
+      "inputModuleId": 5,
+      "inputId": 0
+    },
+    {
+      "color": {
+        "r": 0.0470588282,
+        "g": 0.556862772,
+        "b": 0.0823529437,
+        "a": 1.0
+      },
+      "outputModuleId": 2,
+      "outputId": 3,
+      "inputModuleId": 4,
+      "inputId": 0
+    },
+    {
+      "color": {
+        "r": 0.788235366,
+        "g": 0.717647076,
+        "b": 0.054901965,
+        "a": 1.0
+      },
+      "outputModuleId": 7,
+      "outputId": 1,
+      "inputModuleId": 15,
+      "inputId": 0
+    },
+    {
+      "color": {
+        "r": 0.788235366,
+        "g": 0.0941176564,
+        "b": 0.278431386,
+        "a": 1.0
+      },
+      "outputModuleId": 7,
+      "outputId": 2,
+      "inputModuleId": 15,
+      "inputId": 1
+    },
+    {
+      "color": {
+        "r": 0.0470588282,
+        "g": 0.556862772,
+        "b": 0.0823529437,
+        "a": 1.0
+      },
+      "outputModuleId": 7,
+      "outputId": 3,
+      "inputModuleId": 15,
+      "inputId": 2
+    },
+    {
+      "color": {
         "r": 0.0352941193,
         "g": 0.525490224,
         "b": 0.678431392,
         "a": 1.0
       },
       "outputModuleId": 7,
-      "outputId": 3,
-      "inputModuleId": 4,
+      "outputId": 4,
+      "inputModuleId": 15,
+      "inputId": 3
+    },
+    {
+      "color": {
+        "r": 0.788235366,
+        "g": 0.717647076,
+        "b": 0.054901965,
+        "a": 1.0
+      },
+      "outputModuleId": 7,
+      "outputId": 5,
+      "inputModuleId": 15,
+      "inputId": 4
+    },
+    {
+      "color": {
+        "r": 0.788235366,
+        "g": 0.0941176564,
+        "b": 0.278431386,
+        "a": 1.0
+      },
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 7,
       "inputId": 0
     }
   ]
